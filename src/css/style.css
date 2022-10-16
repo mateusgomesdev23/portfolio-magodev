@@ -1,0 +1,111 @@
+body {
+  background-image: url(../imagens/fundo-site.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "VT323", monospace;
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  min-height: 100vh;
+}
+.card {
+  background-color: #222222;
+  border: 2px solid #294b35;
+  border-radius: 8px;
+  width: 390px;
+  overflow: hidden;
+  padding-top: 30px;
+}
+.card-info img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+.card .card-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  align-items: center;
+  gap: 10px;
+}
+.card .card-info .nomes {
+  font-size: 1.6rem;
+}
+.card .card-info .cargo {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.card .conteudo {
+  background-color: ;
+  margin-top: 15px;
+}
+.card .abas {
+  display: flex;
+}
+.card .abas .aba {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.card .abas img {
+  width: 30px;
+}
+.card .abas .aba.selecionado {
+  background-color: #282828;
+}
+.card .informacoes {
+  background-color: #282828;
+  padding-bottom: 20px;
+}
+.card .abas .aba:hover {
+  background-color: #191919;
+}
+.informacoes .info {
+  min-height: 260px;
+  padding: 15px;
+  display: none;
+}
+.informacoes .info.selecionado {
+  display: block;
+}
+.informacoes .subtitulo {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.informacoes .descricao {
+  font-size: 1.3rem;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+.informacoes .descricao span {
+  color: #070d12;
+  background-color: #22cd90;
+}
+.redes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-bottom: 10px;
+}
+.redes li a {
+  background-color: #000;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 250px;
+  box-shadow: 3px 6px #22cd90;
+}
